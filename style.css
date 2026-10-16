@@ -1,0 +1,567 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: Arial, sans-serif;
+
+    background: #0b1020;
+
+    color: white;
+
+}
+
+
+button,
+input {
+
+    font-family: inherit;
+
+}
+
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* =================================
+   LOGIN
+================================= */
+
+.screen {
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+
+.login-box {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: #151c30;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .5);
+
+}
+
+
+.app-icon {
+
+    width: 90px;
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+.login-box h1 {
+
+    margin: 0 0 10px;
+
+    font-size: 28px;
+
+}
+
+
+.login-box p {
+
+    color: #aeb8cf;
+
+    margin-bottom: 25px;
+
+}
+
+
+.login-box form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+input {
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #0c1222;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: 1px solid #303b58;
+
+}
+
+
+input:focus {
+
+    outline: 2px solid white;
+
+}
+
+
+button {
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+
+
+.login-box button {
+
+    height: 50px;
+
+    background: white;
+
+    color: #111827;
+
+}
+
+
+.login-box button:hover {
+
+    opacity: .9;
+
+}
+
+
+.error {
+
+    min-height: 20px;
+
+    color: #ff8585;
+
+    font-size: 14px;
+
+}
+
+
+/* =================================
+   APLICACIÓN
+================================= */
+
+.app {
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #0b1020;
+
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+header {
+
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 15px;
+
+    background: #111827;
+
+}
+
+
+.header-buttons {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.header-buttons button {
+
+    padding: 9px 12px;
+
+    background: white;
+
+    color: #111827;
+
+}
+
+
+/* =================================
+   MENÚ
+================================= */
+
+.home {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+}
+
+
+.home h2 {
+
+    text-align: center;
+
+    margin-top: 0;
+
+    margin-bottom: 30px;
+
+}
+
+
+.web-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+.web-card {
+
+    min-height: 160px;
+
+    padding: 25px;
+
+    background: #151c30;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .25);
+
+}
+
+
+.web-icon {
+
+    font-size: 42px;
+
+}
+
+
+.web-name {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+}
+
+
+.open-web {
+
+    padding: 10px 20px;
+
+    background: white;
+
+    color: #111827;
+
+}
+
+
+.open-web:hover {
+
+    opacity: .9;
+
+}
+
+
+/* =================================
+   NAVEGADOR
+================================= */
+
+.browser {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.browser-bar {
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 10px;
+
+    background: #151c30;
+
+}
+
+
+.browser-bar button {
+
+    padding: 8px 14px;
+
+    background: white;
+
+    color: #111827;
+
+}
+
+
+iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    flex: 1;
+
+    border: none;
+
+    background: white;
+
+}
+
+
+/* =================================
+   CONFIGURACIÓN
+================================= */
+
+.settings {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: auto;
+
+}
+
+
+.settings h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.settings-option {
+
+    width: 100%;
+
+    min-height: 55px;
+
+    margin-bottom: 12px;
+
+    padding: 15px;
+
+    background: #151c30;
+
+    color: white;
+
+    border: 1px solid #303b58;
+
+    text-align: left;
+
+}
+
+
+.settings-option:hover {
+
+    background: #202a44;
+
+}
+
+
+.settings input {
+
+    width: 100%;
+
+    margin-bottom: 12px;
+
+}
+
+
+.settings > button:not(.settings-option) {
+
+    width: 100%;
+
+    min-height: 50px;
+
+    margin-top: 8px;
+
+    background: white;
+
+    color: #111827;
+
+}
+
+
+.message {
+
+    margin-top: 15px;
+
+    min-height: 25px;
+
+    text-align: center;
+
+}
+
+
+.info {
+
+    color: #aeb8cf;
+
+    line-height: 1.6;
+
+}
+
+.critical-lock {
+    min-height: 100vh;
+    padding: 50px 15px;
+    background: #000;
+    color: #ff3333;
+    font-family: monospace;
+    text-align: center;
+}
+
+.lock-animation {
+    display: block;
+    width: min(100%, 900px);
+    max-height: 58vh;
+    margin: 0 auto 28px;
+    border: 0;
+    object-fit: contain;
+}
+
+.lock-notice {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    animation: lock-notice-appear .35s ease-out;
+}
+
+.lock-notice h1 {
+    margin: 0 0 28px;
+    font-size: clamp(3.5rem, 13vw, 9rem);
+    line-height: 1;
+}
+
+.lock-notice p {
+    margin: 10px 0;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+@keyframes lock-notice-appear {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}

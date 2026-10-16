@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+    <link
+        rel="icon"
+        href="icon.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <title>Mi Centro</title>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================
+     LOGIN
+================================= -->
+
+<div
+    id="loginScreen"
+    class="screen"
+>
+
+    <div class="login-box">
+
+        <img
+            src="icon.png"
+            class="app-icon"
+            alt="Icono de la aplicación"
+        >
+
+        <h1 id="loginAppName">
+            Mi Centro
+        </h1>
+
+        <p>
+            Introduce la contraseña para continuar.
+        </p>
+
+
+        <form id="loginForm">
+
+            <input
+                id="passwordInput"
+                type="password"
+                placeholder="Contraseña"
+                autocomplete="off"
+                autofocus
+            >
+
+            <button type="submit">
+                Entrar
+            </button>
+
+            <div
+                id="errorMessage"
+                class="error"
+            ></div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     APLICACIÓN
+================================= -->
+
+<div
+    id="appScreen"
+    class="app hidden"
+>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <strong id="headerName">
+            Mi Centro
+        </strong>
+
+
+        <div class="header-buttons">
+
+            <button id="settingsButton">
+                ⚙️
+            </button>
+
+            <button id="lockButton">
+                🔒 Bloquear
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         MENÚ PRINCIPAL
+    ================================= -->
+
+    <main
+        id="homeScreen"
+        class="home"
+    >
+
+        <h2>
+            🎮 Centro de juegos
+        </h2>
+
+        <div
+            id="webGrid"
+            class="web-grid"
+        ></div>
+
+    </main>
+
+
+
+<!-- =================================
+         VISOR WEB
+    ================================= -->
+
+    <main
+        id="browserScreen"
+        class="browser hidden"
+    >
+
+        <div class="browser-bar">
+
+            <button id="backButton">
+                ← Volver
+            </button>
+
+            <strong id="currentWebName">
+                Web
+            </strong>
+
+        </div>
+
+
+        <iframe
+            id="websiteFrame"
+            title="Página web"
+            src="about:blank"
+        ></iframe>
+
+    </main>
+
+
+
+    <!-- =================================
+         CONFIGURACIÓN
+    ================================= -->
+
+    <main
+        id="settingsScreen"
+        class="settings hidden"
+    >
+
+        <h2>
+            ⚙️ Configuración
+        </h2>
+
+
+
+        <button
+            id="changeNameButton"
+            class="settings-option"
+        >
+            🏷️ Cambiar nombre de la app
+        </button>
+
+
+        <button
+            id="manageWebsButton"
+            class="settings-option"
+        >
+            🌐 Gestionar webs
+        </button>
+
+
+        <button
+            id="settingsBackButton"
+            class="settings-option"
+        >
+            ← Volver
+        </button>
+
+    </main>
+
+
+
+    <!-- =================================
+         CAMBIAR NOMBRE
+    ================================= -->
+
+    <main
+        id="nameScreen"
+        class="settings hidden"
+    >
+
+        <h2>
+            🏷️ Nombre de la app
+        </h2>
+
+
+        <input
+            id="nameInput"
+            type="text"
+            placeholder="Nombre de la aplicación"
+            maxlength="30"
+        >
+
+
+        <button id="saveNameButton">
+            Guardar nombre
+        </button>
+
+
+        <button id="nameBackButton">
+            ← Volver
+        </button>
+
+
+        <div
+            id="nameMessage"
+            class="message"
+        ></div>
+
+    </main>
+
+
+
+    <!-- =================================
+         GESTIONAR WEBS
+    ================================= -->
+
+    <main
+        id="webSettingsScreen"
+        class="settings hidden"
+    >
+
+        <h2>
+            🌐 Gestionar webs
+        </h2>
+
+
+        <p class="info">
+
+            Las webs se añaden o modifican
+            en el archivo <strong>app.js</strong>.
+
+        </p>
+
+
+        <p class="info">
+
+            Puedes añadir tantas como quieras.
+
+        </p>
+
+
+        <button id="webSettingsBackButton">
+            ← Volver
+        </button>
+
+    </main>
+
+
+</div>
+
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

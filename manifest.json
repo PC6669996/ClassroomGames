@@ -1,0 +1,19 @@
+{
+    "name": "Classroom",
+    "short_name": "Classroom",
+    "description": "Centro personal de juegos web",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0b1020",
+    "theme_color": "#111827",
+    "orientation": "any",
+
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
