@@ -58,7 +58,7 @@ const DEFAULT_APP_NAME = "Classroom";
 const WEBS = [
 
     {
-        nombre: "Funny Games",
+        nombre: "Caca de mierda de web de juegos",
         icono: "🎮",
         url: "https://www.misjuegos.com/"
     },
