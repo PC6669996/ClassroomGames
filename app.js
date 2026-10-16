@@ -729,28 +729,34 @@ document.addEventListener(
 
 if (localStorage.getItem(LOCK_KEY) === "blocked") showCriticalLock();
 
-if (
-    "serviceWorker" in navigator
-) {
 
-    window.addEventListener(
-        "load",
-        function() {
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", async function() {
+        try {
+            const registration =
+                await navigator.serviceWorker.register("./sw.js");
 
-            navigator.serviceWorker
-                .register("sw.js")
-                .catch(
-                    function(error) {
+            // Comprueba si hay una versión nueva al abrir la app.
+            await registration.update();
 
-                        console.error(
-                            "Error del Service Worker:",
-                            error
-                        );
+            // Si se instala una nueva versión mientras la app
+            // está abierta, recarga cuando el nuevo SW tome el control.
+            let refreshing = false;
 
-                    }
-                );
+            navigator.serviceWorker.addEventListener(
+                "controllerchange",
+                function() {
+                    if (refreshing) return;
+                    refreshing = true;
+                    window.location.reload();
+                }
+            );
 
+        } catch (error) {
+            console.error(
+                "Error del Service Worker:",
+                error
+            );
         }
-    );
-
+    });
 }
