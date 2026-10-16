@@ -79,12 +79,6 @@ const WEBS = [
         nombre: "Calcsolver",
         icono: "🕹️",
         url: "https://calcsolver.net/"
-    },
-        
-    {
-        nombre: "Playgama",
-        icono: "🕹️",
-        url: "https://playgama.com/?utm_source=google&utm_medium=cpc&utm_campaign=Search_T2_eng_All_Main_General_eCPA-timespent10_20251213&utm_term=tid-kwd-10074001|kwd-games|mt-b&utm_content=cid-23360717888|gid-185324179610|aid-794971324521|net-g|dvc-c&plc=&gclid=CjwKCAjw88HWBhA3EiwAo2Zd6KLpurwk5kWWfl44N0PX8p0ibh1-ryRNY7KPdt9IAG-2RB4yWwycUxoCbF4QAvD_BwE&gad_source=1&gad_campaignid=23360717888&gbraid=0AAAAA-ptnBphgJmtyP8Yv08zLCmCogH0G&gclid=CjwKCAjw88HWBhA3EiwAo2Zd6KLpurwk5kWWfl44N0PX8p0ibh1-ryRNY7KPdt9IAG-2RB4yWwycUxoCbF4QAvD_BwE"
     }
 
 
