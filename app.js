@@ -79,7 +79,21 @@ const WEBS = [
         nombre: "Calcsolver",
         icono: "🕹️",
         url: "https://calcsolver.net/"
+    },
+   
+   {
+        nombre: "Calcsolver 2",
+        icono: "🕹️",
+        url: "https://mathkit.online/"
+    },
+   
+   {
+        nombre: "Unblocked Games",
+        icono: "🕹️",
+        url: "https://glacierarcade.win/apps"
     }
+
+
 
 
 ];
