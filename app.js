@@ -96,7 +96,7 @@ const WEBS = [
    {
         nombre: "Chat",
         icono: "💬",
-        url: "https://chat.conversejs.org/"
+        url: "https://organizations.minnit.chat/974698439336412/Main"
     }
 
 
