@@ -91,6 +91,12 @@ const WEBS = [
         nombre: "Unblocked Games",
         icono: "🕹️",
         url: "https://glacierarcade.win/apps"
+    },
+
+   {
+        nombre: "Chat",
+        icono: "💬",
+        url: "https://chat.conversejs.org/"
     }
 
 
