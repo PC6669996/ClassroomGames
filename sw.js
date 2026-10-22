@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "mi-centro-v11";
+const CACHE_NAME = "mi-centro-v12";
 
 const FILES_TO_CACHE = [
     "./",
